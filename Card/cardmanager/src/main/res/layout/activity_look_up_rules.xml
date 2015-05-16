@@ -1,0 +1,363 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="itisme.com.cn.card.LookUpRulesAty">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="规则列表"
+        android:id="@+id/tvRulesList"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp" />
+    <ListView
+        android:layout_below="@+id/tvRulesList"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/listView"
+        android:layout_toEndOf="@+id/listView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="规则流程"
+            android:id="@+id/tvRuleProcess"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TableLayout
+            android:background="@drawable/shape"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvRuleProcess"
+            android:id="@+id/tableLayout2">
+            <TableRow
+
+                >
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="@string/west"
+                />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:text="@string/north"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:text="@string/east"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:text="@string/south"
+                    />
+
+            </TableRow>
+            <TableRow
+
+                >
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvWest1"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvNorth1"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvEast1"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvSouth1" />
+
+            </TableRow>
+            <TableRow
+
+                >
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvWest2" />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvNorth2"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvEast2"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvSouth2" />
+
+            </TableRow>
+            <TableRow
+
+                >
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvWest3" />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvNorth3"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvEast3"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvSouth3" />
+
+            </TableRow>
+            <TableRow
+
+                >
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvWest4" />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvNorth4"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvEast4"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvSouth4" />
+
+            </TableRow>
+            <TableRow
+
+                >
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvWest5" />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvNorth5"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvEast5"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvSouth5" />
+
+            </TableRow>
+            <TableRow
+
+                >
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvWest6" />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvNorth6"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvEast6"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvSouth6" />
+
+            </TableRow>
+            <TableRow
+
+                >
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvWest7" />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvNorth7"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvEast7"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tvSouth7" />
+
+            </TableRow>
+
+
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="规则内容"
+            android:id="@+id/tvRuleContent"
+            android:layout_alignTop="@+id/tvRuleProcess"
+            android:layout_alignLeft="@+id/etRulesContent"
+            android:layout_alignStart="@+id/etRulesContent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp" />
+
+        <EditText
+            android:padding="5dp"
+            android:inputType="textMultiLine"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:layout_marginLeft="15dp"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:id="@+id/etRulesContent"
+            android:layout_toRightOf="@+id/tableLayout2"
+            android:layout_toEndOf="@+id/tableLayout2"
+            android:layout_alignTop="@+id/tableLayout2"
+            android:gravity="top|left" />
+
+        <Button
+            android:onClick="changeContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改内容"
+            android:id="@+id/btnChangeContent"
+            android:layout_below="@+id/etRulesContent"
+            android:layout_alignLeft="@+id/etRulesContent"
+            android:layout_alignStart="@+id/etRulesContent" />
+
+        <Button
+            android:onClick="backMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/btnBack"
+            android:layout_alignBottom="@+id/btnChangeContent"
+            android:layout_alignRight="@+id/etRulesContent"
+            android:layout_alignEnd="@+id/etRulesContent" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

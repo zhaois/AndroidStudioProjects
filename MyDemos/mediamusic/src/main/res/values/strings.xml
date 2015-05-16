@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MediaMusic</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="net_play">netPlay</string>
+    <string name="net_pause">netPause</string>
+    <string name="back_play">BackPlay</string>
+</resources>

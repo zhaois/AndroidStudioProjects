@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ServiceTest</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="bind">Bind</string>
+    <string name="unbind">Unbind</string>
+    <string name="count">Count</string>
+    <string name="count_service">CountService</string>
+    <string name="activity_to_service">activity-to-service</string>
+    <string name="activity_to_bind_service">activity-to-bind-service</string>
+    <string name="bind_count_service">BindCountService</string>
+
+</resources>

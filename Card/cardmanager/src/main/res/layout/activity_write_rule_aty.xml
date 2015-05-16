@@ -1,0 +1,435 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="itisme.com.cn.card.WriteRuleAty">
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="叫牌:"
+        android:id="@+id/callCard"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="left|center"
+        android:textColor="#ff4effd4" />
+
+    <Spinner
+
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinnerRules"
+        android:layout_alignTop="@+id/callCard"
+        android:layout_toRightOf="@+id/callCard"
+        android:spinnerMode="dropdown"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/etWriteRule"
+        android:background="@drawable/shape"
+        android:layout_alignLeft="@+id/callCard"
+        android:layout_alignStart="@+id/callCard"
+        android:layout_below="@+id/spinnerRules"
+        android:hint="@string/hint_write_rule"
+        android:gravity="top" />
+
+    <Button
+        android:onClick="lastStep"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_step"
+        android:id="@+id/btnLast"
+        android:layout_below="@+id/etWriteRule"
+        android:layout_alignLeft="@+id/etWriteRule"
+        android:layout_alignStart="@+id/etWriteRule" />
+
+    <Button
+        android:onClick="nextStep"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_step"
+        android:id="@+id/btnNext"
+        android:layout_below="@+id/etWriteRule"
+        android:layout_alignRight="@+id/etWriteRule"
+        android:layout_alignEnd="@+id/etWriteRule" />
+
+    <Button
+        android:onClick="clearContent"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:id="@+id/btnClear"
+        android:layout_below="@+id/etWriteRule"
+        android:layout_toRightOf="@+id/callCard"
+        android:layout_toEndOf="@+id/callCard" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/etWriteRule"
+        android:layout_toRightOf="@+id/etWriteRule"
+        android:layout_toEndOf="@+id/etWriteRule"
+        android:id="@+id/tableLayout"
+        android:layout_above="@+id/btnSaveBack">
+        <TableRow
+            android:layout_weight="1"
+            >
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/dirction_background"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="@string/west"
+                />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tvWest1" />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tvWest2" />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tvWest3" />
+            <TextView
+                android:id="@+id/tvWest4"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:id="@+id/tvWest5"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvWest6"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:id="@+id/tvWest7"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            >
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/dirction_background"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="@string/north"
+                />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tvNorth1" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvNorth2"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:id="@+id/tvNorth3"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvNorth4"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvNorth5"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvNorth6"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvNorth7"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_weight="1"
+            >
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/dirction_background"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:text="@string/east"
+                />
+            <TextView
+
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tvEast1" />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tvEast2"
+                />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tvEast3"
+                />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tvEast4"
+                />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tvEast5"
+                />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tvEast6"
+                />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tvEast7"
+
+                />
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            >
+            <TextView
+                android:background="@drawable/dirction_background"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="@string/south"
+                android:gravity="center"
+                />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                android:id="@+id/tvSouth1" />
+            <TextView
+                android:id="@+id/tvSouth2"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:id="@+id/tvSouth3"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:id="@+id/tvSouth4"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:id="@+id/tvSouth5"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:id="@+id/tvSouth6"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvSouth7"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存返回"
+        android:id="@+id/btnSaveBack"
+        android:onClick="saveBack"
+        android:layout_alignTop="@+id/btnNext"
+        android:layout_alignLeft="@+id/tableLayout"
+        android:layout_alignStart="@+id/tableLayout" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一条"
+        android:onClick="writeNext"
+        android:id="@+id/btnWriteNext"
+        android:layout_alignBottom="@+id/btnSaveBack"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清空当前流程"
+        android:onClick="clearCurrentProcess"
+        android:id="@+id/btnClearCurrentProcess"
+        android:layout_alignTop="@+id/btnSaveBack"
+        android:layout_toRightOf="@+id/btnSaveBack"
+        android:layout_toEndOf="@+id/btnSaveBack" />
+
+    <TextView
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="规则流程"
+        android:id="@+id/tvRuleProcess"
+        android:background="@drawable/shape"
+        android:layout_above="@+id/etWriteRule"
+        android:layout_toLeftOf="@+id/btnWriteNext"
+        android:layout_toStartOf="@+id/btnWriteNext"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:id="@+id/btnBack"
+        android:onClick="backMain"
+        android:layout_alignTop="@+id/btnWriteNext"
+        android:layout_toRightOf="@+id/btnClearCurrentProcess"
+        android:layout_toEndOf="@+id/btnClearCurrentProcess" />
+
+</RelativeLayout>

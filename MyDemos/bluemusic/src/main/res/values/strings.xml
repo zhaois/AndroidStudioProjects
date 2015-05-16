@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">mp3播放器</string>
+    <string name="labName">输入歌名</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>s
+    <string name="stop">停止</string>
+    <string name="restart">重复</string>
+    <string name="txtContinue">继续</string>
+</resources> 
